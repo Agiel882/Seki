@@ -15,9 +15,6 @@ chrome.runtime.onMessage.addListener(
 			for(i = 0; i < NumRads; i++){
 				RadReturn.push(Radicals[i].text)
 			}
-			if(document.getElementsByClassName("radical_area_active")[0] == null){
-				document.getElementById("radical_button").click();
-			}
 			var RadicalList = document.getElementsByClassName("radical_table clearfix")[0].childNodes;
 			var length = RadicalList.length;
 			var Rads = RadReturn.length;

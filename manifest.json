@@ -15,9 +15,9 @@
 	  "js": ["contentscript.js"]
   	}
   ],
-  "web_accessible_resources": ["seki.js", "frame.html," "frame.js"],
+  "web_accessible_resources": ["frame.html", "frame.js"],
   "permissions": [
-   "activeTab",
+   "tabs",
    "*://*.jisho.org/*",
    "declarativeContent"
    ]

@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded', function() {
-  var form = document.getElementById("KanjiForm");
+  //Wait for the button press
   var button = document.getElementById("KanjiButton");
   button.addEventListener('click', function() {
 	var Kanji = document.getElementById('KanjiBox').value;

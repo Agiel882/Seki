@@ -5,6 +5,7 @@ function BuildURL(Kanji){
 chrome.runtime.onMessage.addListener(
   function KanjiReceive(message, sender, sendResponse) {
 	var URL = BuildURL(message);
+    //query Jisho for the Kanji info page's DOM
 	fetch(URL).then(function(response){
 		response.text().then(function(result) {
 			//parse the document and pull relevant info from it.
@@ -26,6 +27,7 @@ chrome.runtime.onMessage.addListener(
 				for(j = 0; j < Rads; j++){
 					(function (i, j, RadicalList, RadReturn){
 						if(RadicalList[i].textContent == RadReturn[j]){
+                            //timeout to allow Jisho.org to make XHR requests in between clicks
 							setTimeout(function(){
 								RadicalList[i].click();
 							},　j*500);

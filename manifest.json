@@ -3,7 +3,7 @@
 
   "name": "Seki",
   "description": "Upgrading the search by radicals functionality on jisho.org by adding an add radicals by kanji feature.",
-  "version": "2.0",
+  "version": "2.2",
   "background": {
 	"scripts": ["background.js"],
 	"persistent": true

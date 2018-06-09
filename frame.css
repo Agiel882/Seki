@@ -1,10 +1,18 @@
 #KanjiButton {
     background-color: #e7e7e7; color: black;
-    border-radius: 12px;
+    border-radius: 8px;
     border: none;
 	padding: 3px 13px;
 	text-align: center;
 	text-decoration: none;
 	display: inline-block;
 	font-size: 12px;
+}
+
+#KanjiBox {
+    padding: 3px 5px;
+    margin: 5px 0;
+    border: none;
+    border-radius: 6px;
+    outline: none;
 }
